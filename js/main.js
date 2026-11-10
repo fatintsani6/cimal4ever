@@ -130,7 +130,7 @@
 
     const data = (SETTINGS.wishes && SETTINGS.wishes.length)
       ? SETTINGS.wishes
-      : [{ icon: 'heart', text: 'Happy birthday!' }];
+      : [{ icon: 'heart', text: 'Jarak boleh memisahkan kita, tapi dukunganku selalu menyertaimu. Semangat, sayang.' }];
 
     grid.innerHTML = data.map((w, i) => `
       <div class="wish-card" style="--d:${(i % 3) * 0.1}s">
@@ -177,10 +177,6 @@
     const yearEl = document.querySelector('[data-current-year]');
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-    // Candle blow out interaction
-    const candles = document.querySelectorAll('.candle');
-    const candlesContainer = document.querySelector('.ending__candles');
-    const signoff = document.querySelector('.ending__signoff');
     const whatsappBtnWrap = document.querySelector('.ending__whatsapp');
     const whatsappBtn = document.getElementById('whatsapp-reply-btn');
     
@@ -190,30 +186,12 @@
       const msg = encodeURIComponent(window.OCEAN_SETTINGS.whatsappMessage || "Hi!");
       whatsappBtn.href = `https://wa.me/${num}?text=${msg}`;
     }
-    
-    let blownOut = 0;
-    candles.forEach(candle => {
-      candle.addEventListener('click', () => {
-        if (!candle.classList.contains('is-out')) {
-          candle.classList.add('is-out');
-          blownOut++;
-          if (blownOut === candles.length) {
-            candlesContainer?.classList.add('is-all-out');
-            if (signoff) {
-              signoff.style.opacity = '0';
-              setTimeout(() => {
-                signoff.textContent = 'Wish granted.';
-                signoff.style.opacity = '1';
-                // Reveal whatsapp button
-                if (whatsappBtnWrap && window.OCEAN_SETTINGS.whatsappNumber) {
-                  whatsappBtnWrap.classList.add('is-visible');
-                }
-              }, 400);
-            }
-          }
-        }
+
+    if (whatsappBtnWrap && window.OCEAN_SETTINGS.whatsappNumber) {
+      OCEAN.bus.on('letter:revealed', () => {
+        whatsappBtnWrap.classList.add('is-visible');
       });
-    });
+    }
   }
 
   /* ── Boot ───────────────────────────────────────────────── */

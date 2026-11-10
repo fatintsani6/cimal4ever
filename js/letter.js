@@ -12,10 +12,10 @@
   const LETTER_PARAGRAPHS = (SETTINGS.letterParagraphs && SETTINGS.letterParagraphs.length)
     ? SETTINGS.letterParagraphs
     : [
-        'I wanted to send this the way old sailors used to send word home — sealed up, set adrift, and trusted to find its way to you.',
-        "Today is your day, and I hope it feels exactly like that: unhurried, warm, and full of small good things. You deserve every bit of it.",
-        'Thank you for being the kind of person whose presence makes ordinary days feel like something worth remembering. This little corner of the internet is just a small way of saying so.',
-        "However you spend today, I hope it's surrounded by people who love you as much as I do. Happy birthday."
+      'Jarak mungkin memisahkan kita untuk sementara, tetapi dukungan dan doaku selalu menyertaimu.',
+      'Teruslah mengejar apa yang kamu impikan. Aku bangga padamu dan akan selalu ada untuk menyemangatimu.',
+      'Jaga diri baik-baik di sana. Saat rindu datang, ingatlah bahwa ada hati di sini yang selalu menunggumu.',
+      'Kita mungkin berjauhan, tetapi kita tetap menjalani cerita ini bersama. Semangat, sayang.'
       ];
 
   let typed = false;

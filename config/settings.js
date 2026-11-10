@@ -1,6 +1,6 @@
 /**
  * ╔══════════════════════════════════════════════════════════════╗
- * ║           OCEAN BIRTHDAY — SEMUA PENGATURAN DI SINI         ║
+ * ║            OCEAN LETTER — SEMUA PENGATURAN DI SINI          ║
  * ║  Kamu HANYA perlu edit file ini. Tidak perlu buka file lain. ║
  * ╚══════════════════════════════════════════════════════════════╝
  *
@@ -62,16 +62,19 @@ const GALLERY_PHOTOS = [
    Setiap string adalah satu paragraf.
    Bisa ditambah atau dikurangi paragrafnya.                       */
 const LETTER_PARAGRAPHS = [
-  "Hari ini langit biru membentang, ikan-ikan dilaut menari. Sementara angin musim yang pernah kita hirup perlahan pergi. Musim panas telah usai dan peran musim hujan akan segera datang, mengingatkan aku pertama kali kita ketemu dan mau kebatu tetapi hujan kala itu.",
-  "Namun bagiku itu jatuh cinta yang paling indah sejak terakhir kali aku merasakan jantung yang berdebar debar. Bukan yang pertama… Bukan yang kedua… Tetapi sangat ingin selalu kurasakan.",
+  "Hari ini langit biru membentang, ikan-ikan di laut menari. Sementara angin musim yang pernah kita hirup perlahan pergi. Musim panas telah usai dan musim hujan akan segera datang, mengingatkanku pada pertama kali kita bertemu dan mau ke Batu, tetapi hujan kala itu.",
+  "Namun, bagiku, itu adalah jatuh cinta yang paling indah sejak terakhir kali aku merasakan jantung yang berdebar-debar.",
+  "Bukan yang pertama…",
+  "Bukan yang kedua…",
+  "Tetapi sangat ingin selalu kurasakan.",
   "Aku sudah kehilangan hitungan sejak lama. Setiap pagi sejak saat itu, hariku sungguh terasa diberkati.",
-  "Waktu selalu berputar, memaksa menyeret ku untuk bangun dan menyadari bahwa hari ini adalah hari dimana orang yang PALING AKU SAYANGI harus pergi karena mengejar apa yang dia inginkan.",
-  "Namun bukan kecewa dan merasa ditinggalkan. Justru hatiku merasa senang dan bangga dimana aku bisa melihat orang yang aku sayangi meraih tujuannya dimana ada aku didalam proses.",
-  "Dada sesak, air mata jatuh, dan selera makan mulai hilang sejak mendengar kalau akan segera jauh.",
-  "Pada awalnya aku menangis bertanya kenapa setelah aku menemukan orang yang selama ini aku cari tetapi malah jauh, dan dari beberapa pertemuan kita aku sadari sesuatu yang penting. Dimana ikatan kepercayaan yang selama ini sedikit demi sedikit terbangun.",
-  "Hari ini hatiku akan ikut terbang bersamamu, bukan lagi ada ditubuhku. Dan untuk jepang tolong jaga dia baik baik ya.",
-  "Terimakasih engkau sudah menjadi bahagia yang tak disangka sangka. Datang dengan tidak sengaja Dan bertahan bersama sama.",
-  "Thank you my beautiful girl For making my life more beautiful and filling me with happiness everyday",
+  "Waktu selalu berputar, memaksaku untuk bangun dan menyadari bahwa hari ini adalah hari ketika orang yang PALING AKU SAYANGI harus pergi demi mengejar apa yang dia inginkan.",
+  "Namun, aku bukan kecewa atau merasa ditinggalkan. Justru hatiku merasa senang dan bangga karena bisa melihat orang yang aku sayangi meraih tujuannya, dan aku menjadi bagian dari prosesnya.",
+  "Dada sesak, air mata jatuh, dan selera makan mulai hilang sejak mendengar bahwa kita akan segera berjauhan.",
+  "Pada awalnya aku menangis dan bertanya, kenapa setelah aku menemukan orang yang selama ini aku cari, kita malah harus berjauhan? Namun, dari beberapa pertemuan kita, aku menyadari sesuatu yang penting: ikatan kepercayaan yang selama ini sedikit demi sedikit terbangun.",
+  "Hari ini hatiku akan ikut terbang bersamamu, bukan lagi berada di tubuhku. Jepang, tolong jaga dia baik-baik, ya.",
+  "Terima kasih, kamu sudah menjadi kebahagiaan yang tak disangka-sangka. Datang dengan tidak sengaja dan bertahan bersama-sama.",
+  "Thank you, my beautiful girl, for making my life more beautiful and filling me with happiness every day.",
 ];
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -109,17 +112,17 @@ const MEMORIES = [
 ];
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   7. UCAPAN ULANG TAHUN
+   7. UCAPAN PENYEMANGAT
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    icon: wave | shell | star | compass | anchor | heart
    text: isi ucapannya                                            */
 const WISHES = [
-  { icon: "wave",    text: "May this year bring you the calmness of the ocean and the depth of your kindness." },
-  { icon: "shell",   text: "Hope your days are as bright as the sun on the water, and your nights as peaceful as the receding tide." },
-  { icon: "star",    text: "May every little wish of yours arrive right when you need it the most." },
-  { icon: "compass", text: "Wherever this year takes you, I hope you always find your way back to the people who adore you." },
-  { icon: "anchor",  text: "Stay grounded, stay grateful, and honestly, just stay as beautiful as you are right now." },
-  { icon: "heart",   text: "Happy birthday — cheers to another year of memories totally worth keeping." },
+  { icon: "wave",    text: "Jarak boleh memisahkan kita, tapi tidak akan mengurangi rasa sayang dan dukunganku untukmu." },
+  { icon: "shell",   text: "Semoga hari-harimu di Jepang dipenuhi hal baik, teman-teman yang tulus, dan pengalaman baru yang menyenangkan." },
+  { icon: "star",    text: "Terus kejar semua impianmu. Aku bangga padamu dan akan selalu mendukung setiap langkahmu." },
+  { icon: "compass", text: "Saat rindu datang, ingatlah bahwa ada hati di sini yang selalu menunggumu pulang." },
+  { icon: "anchor",  text: "Jaga diri baik-baik, makan teratur, istirahat yang cukup, dan jangan lupa cerita apa pun kepadaku." },
+  { icon: "heart",   text: "Kita mungkin berjauhan, tetapi kita tetap menjalani cerita ini bersama. Semangat, sayang." },
 ];
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -133,7 +136,7 @@ const WISHES = [
    Nomor WA untuk membalas pesan setelah lilin ditiup.
    Gunakan format internasional tanpa tanda + (contoh: 62812...) */
 const WHATSAPP_NUMBER = "6281234567890";   // ← GANTI NOMOR WA YANG ORDER
-const WHATSAPP_MESSAGE = "Hey, I just opened the bottle. Thank you for making my day! ✨"; // ← GANTI PESAN OTOMATIS
+const WHATSAPP_MESSAGE = "Aku sudah baca suratnya. Terima kasih sudah selalu mendukungku, aku sayang kamu!"; // ← GANTI PESAN OTOMATIS
 
 window.OCEAN_SETTINGS = {
     recipientName:    String(RECIPIENT_NAME),
